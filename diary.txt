@@ -1,0 +1,48 @@
+Todo
+[x] Moveable character, basic rectangle is fine
+    [x] Simple collision detection for walls and goal
+    [x] Can touch goal to re-generate map
+[x] Array for map
+    [x] different value for character, goal, walls, and empty space
+    [x] 2D? (might as well)
+[ ] Random Depth-first search algorithm
+    [x] Make "head" position
+    [x] Array of past position
+        [x] Keep check of current position in array ^
+    [x] Choose random available direction
+        [x] stdlib rand + modulus + switch
+    [x] Check which paths are possible
+        [x] Make struct to keep each direction
+        [x] Function to update struct values
+    [x] Backtrack when at a dead end
+        [x] Keep check of dead ends, to put goal in afterwards
+    [x] Check when all possible positions have been visited
+    [x] Make a goal in a dead end
+    [-] Doors + Keys?
+        (The game is hard enough to beat(impossible) as it is)
+[x] Points 
+    [x] Make points appear over screen (change alpha values)
+
+
+[4/11]
+I can't be bothered to redo my previous maze to fix the 318018 bug again, so 
+I'mma just make a new maze-maker instead. I'm already over the deadline, so 
+might as well make something quick and easy.
+Depth-search it is.
+I copied most of my empty map-generating code from the previous one, 
+seeing how it's the same either way, though I now make it a 2d array instead.
+
+[6/11]
+My brother had his birthday party yesterday. I joined him and his freinds as 
+a chaperone to Gröna Lund.  No regrets.
+With map and character basics done I do the rest. Making the algorithm was 
+way easier than my previous attempts without any possible way for the 318 bug 
+again, even without watching any guides.
+
+[7/11]
+Colour change + I made the character a slight bit smaller than the walls, so 
+he's nicer to look at.
+I noticed a few issues with how the goal is placed, and issues in general with
+the algorithms choice of movement. It took about an hour of printf but it's now
+fixed. I don't think there is anything more to do.
+(No, I'm not making doors. That'd be cruel.)
